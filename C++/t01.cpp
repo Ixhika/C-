@@ -35,11 +35,11 @@ int main(){
 // call by reference
 int main(){
     int a = 10;
-    int& b = a;   //&:empercent symbol used to refer the variable a
+    int& b = a;   //&:empercent symbol used to refer the variable a , it prints the address of the variable
     return 0;
 }
 
-// const in c++ keyword works as static keyword in java
+// const: in c++ keyword works as static keyword in java
 
 // * : deference of operator
 

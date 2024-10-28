@@ -34,8 +34,25 @@ int main(){
     // to get any element at specifc index
     vec[i]   /*or*/   vec.at(i);
 
+    // sorting the vector/array
+    sort(vec.begin() , vec.end()); //normal sorting
+    
     return 0;
 }
 
 // why we use vector<int>& vec: because we want the values to be passed by their reference i.e it creates an alias i.e an alternate a name...
 // Eg: gandadhar is shaktiman...like that
+
+
+int main(){
+    vector<vector<int>> adj1;
+        for(int i=0;i<n;i++){
+           adj1[i] = vector<int>(); //adding new arraylist within a list
+        }
+
+        //gettinh the index from from and adding to other
+        for(int i=1;i<n;i++){
+            adj1[parent[i]].push_back(i);
+        }
+    return 0;
+}
